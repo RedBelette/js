@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TwigSampleController {
 
 	@RequestMapping("/twig/helloworld/{name}")
-    public String indexAction(ModelMap model, @PathVariable("name") String name) {
+    public String helloworldAction(ModelMap model, @PathVariable("name") String name) {
         model.addAttribute("name", name);
-        return "index";
+        return "helloworld";
     }
 	
 	public static void main(String[] args) {

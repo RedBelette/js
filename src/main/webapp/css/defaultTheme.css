@@ -1,0 +1,36 @@
+a:hover{
+	text-decoration: none;
+}
+
+fieldset table {
+	width: 100%;
+}
+
+fieldset table tr th {
+	background: #337ab7;
+	color: white;
+}
+
+fieldset ul li {
+	width: 100%;
+	list-style: none;
+}
+
+fieldset ul li:before {
+	content:"\f18e";
+	font-family: FontAwesome;
+	display: inline-block;
+  	margin-left: -1.3em;
+  	width: 1.3em;
+}
+
+fieldset ul li a:hover {
+	color: white;
+	background: #337ab7;
+}
+
+fieldset ul li a {
+	color: black;
+	width: 100%;
+	display: inline-block;
+}

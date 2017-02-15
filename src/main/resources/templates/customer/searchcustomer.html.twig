@@ -1,0 +1,53 @@
+{% extends "../base.html.twig" %}
+
+{% block base_menu %}Gestion client{% endblock %}
+
+{% block base_second_nav_li %}
+    <li class="active"><a href="#section1">Recherche</a></li>
+    <li><a href="#section2">Nouveau client</a></li>
+    <li><a href="#section3">Lister tout les clients</a></li>
+{% endblock %}
+
+{% block base_content %}
+
+<div class="row">
+	<div class="col-sm-12">
+		<fieldset>
+			<legend>Recherche par nom & prénom</legend>
+			<form action="" method="post">
+				<label for="firstname">Prénom :</label>
+				<input name="firstname" placeholder="Prénom"/>
+				<label for="lastname">Nom :</label>
+				<input name="lastname" placeholder="Nom"/>
+				<button>Rechercher</button>
+			</form>
+		</fieldset>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-12">
+    	<fieldset>
+    		<legend>Résultats</legend>
+    		<table>
+    			<tr>
+    				<th>#</th>
+    				<th>Clients</th>
+    			</tr>
+    			<tr>
+    				<td><a href="#">00006</a></td>
+    				<td>Hubert Reeves</td>
+    			</tr>
+    			<tr>
+    				<td><a href="#">00007</a></td>
+    				<td>Franz Ferdinand</td>
+    			</tr>
+    			<tr>
+    				<td><a href="#">00008</a></td>
+    				<td>ET MANUEL</td>
+    			</tr>
+    		</table>
+    	</fieldset>
+    </div>
+</div>
+{% endblock %}

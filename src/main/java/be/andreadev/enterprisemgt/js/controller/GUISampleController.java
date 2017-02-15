@@ -9,13 +9,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @EnableAutoConfiguration
 public class GUISampleController {
 
-	@RequestMapping("/")
+	@RequestMapping(value={"", "/", "dashboard.html"})
     public String indexAction() {
         return "dashboard/dashboard.html"; 
     }
 	
+	@RequestMapping("/searchCustomer.html")
+	public String searchCustomerAction() {
+		return "customer/searchcustomer.html"; 
+	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(GUISampleController.class, args);
 	}
-	
+	 
 }

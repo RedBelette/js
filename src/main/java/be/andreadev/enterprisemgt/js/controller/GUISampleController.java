@@ -17,7 +17,7 @@ public class GUISampleController {
 	@RequestMapping("/searchCustomer.html")
 	public String searchCustomerAction() {
 		return "customer/searchcustomer.html"; 
-	}
+	} 
 	
 	public static void main(String[] args) {
 		SpringApplication.run(GUISampleController.class, args);
